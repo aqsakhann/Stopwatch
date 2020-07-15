@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="text-center mt-10">
+            <h1 >Stop Watch</h1>
+        </div>
+        <div class="text-center mt-3">
+
+            <div class="col-sm-* stopwatch">
+                00:00:00
+            </div>
+            <div class="col-sm-* mt-3">
+
+                <button class="btn btn-dark " id="disable" onclick="start() ,disableBtn(),enableL()">Start</button>
+                <button class="btn  btn-dark " onclick="stop() ,enableBtn(),disableL()">Stop</button>
+                <button class="btn btn-dark "  onclick="pause(),enableBtn(),disableL()">Pause</button>
+                <button class="btn btn-dark dis" onclick="lap(),enableBtn()"> Lap</button>
+                <button class="btn btn-dark dis"  onclick="resetLap(),enableBtn()">Reset Lap</button>
+
+            </div>
+            <div class="col-sm-* mt-3 text-center ">
+                <ul class="lap"></ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
